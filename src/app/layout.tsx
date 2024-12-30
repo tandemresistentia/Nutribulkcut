@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Script from 'next/script';
+import React from 'react';
+import ClientWrapper from './ClientWrapper'; // Import the Client Component wrapper
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,31 +16,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
-
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* Google Analytics */}
-        {GA_TRACKING_ID && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_TRACKING_ID}');
-              `}
-            </Script>
-          </>
-        )}
-
-        {/* Page Content */}
-        {children}
+        {/* Client Wrapper for Cookies and Google Analytics */}
+        <ClientWrapper>{children}</ClientWrapper>
       </body>
     </html>
   );

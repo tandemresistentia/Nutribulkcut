@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Share2, Tag, Gift } from "lucide-react";
-import { useWaitlist } from "@/pages/api/useWaitlist";
+import { useWaitlist } from "@/api/useWaitlist";
 
 const Hero = () => {
   const { email, setEmail, message, loading, handleJoinWaitlist } = useWaitlist();
