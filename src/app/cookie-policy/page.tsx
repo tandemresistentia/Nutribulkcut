@@ -23,7 +23,7 @@ const Page = () => {
             </li>
           </ul>
           <p className="mt-4 text-gray-600">
-            You can withdraw your consent to cookies at any time by adjusting your browser settings or clicking the "Decline" button on our website.
+            You can withdraw your consent to cookies at any time by adjusting your browser settings or clicking the Decline button on our website.
           </p>
         </CardContent>
       </Card>
