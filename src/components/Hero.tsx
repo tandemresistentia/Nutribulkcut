@@ -98,7 +98,7 @@ const Hero = () => {
                     <div className="flex flex-col items-center text-orange-500 transition-all hover:text-orange-600">
                       <Tag className="w-8 h-8" />
                       <p className="text-sm font-medium">Discounts</p>
-                      <p className="text-xs text-center text-gray-600">Get 20% off at launch</p>
+                      <p className="text-xs text-center text-gray-600">Get 50% off at launch</p>
                     </div>
                     <div className="flex flex-col items-center text-orange-500 transition-all hover:text-orange-600">
                       <Share2 className="w-8 h-8" />
