@@ -64,7 +64,7 @@ const Hero = () => {
                 <p className="text-xl leading-relaxed text-center text-gray-600">
                   Having trouble staying on track with your fitness and nutrition? Join our waitlist today for a simple solution!
                 </p>
-                <div className="pt-4 space-y-6">
+                <div className="pt-4 space-y-3">
                   <input
                     type="email"
                     placeholder="Enter your email"
@@ -84,6 +84,7 @@ const Hero = () => {
                       {message}
                     </p>
                   )}
+                  {!message && <div className="min-h-[20px]"></div>}
                   <p className="text-sm text-center text-gray-700">
                     We will notify you when we launch. No spam, guaranteed.
                   </p>
