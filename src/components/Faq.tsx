@@ -117,10 +117,13 @@ const Faq = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="inline-flex items-center gap-2 text-gray-600">
+          <a 
+          href="mailto:luismvg41@gmail.com"
+          className="inline-flex items-center gap-2 text-gray-600"
+          >
             <MessageCircle className="w-5 h-5 text-orange-500" />
             <span>Still have questions? Contact our support team</span>
-          </div>
+          </a>
         </motion.div>
       </div>
     </section>

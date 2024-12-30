@@ -115,6 +115,7 @@ const Pricing = () => {
                   </div>
 
                   <Button 
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth'})}
                     className={`w-full py-6 text-lg font-semibold transition-all duration-300 ${
                       plan.popular 
                         ? 'bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-lg'
