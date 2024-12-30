@@ -85,7 +85,7 @@ const Hero = () => {
                     </p>
                   )}
                   <p className="text-sm text-center text-gray-700">
-                    We'll notify you when we launch. No spam, guaranteed.
+                    We will notify you when we launch. No spam, guaranteed.
                   </p>
                 </div>
 
