@@ -4,14 +4,15 @@ import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyB3hiLlAkAr7Sc98PPqi7LOIQwGDQKb6qE",
-  authDomain: "nutribulkcut.firebaseapp.com",
-  projectId: "nutribulkcut",
-  storageBucket: "nutribulkcut.firebasestorage.app",
-  messagingSenderId: "165932166798",
-  appId: "1:165932166798:web:1916e48950e062862423df",
-  measurementId: "G-NKEG9W8Z57"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
+
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
