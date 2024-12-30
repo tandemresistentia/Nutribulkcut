@@ -43,6 +43,13 @@ export const useWaitlist = () => {
       // Save email to Firestore
       await addDoc(collection(db, "waitlist"), { email, createdAt: new Date() });
 
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "waitlist_signup", {
+        event_category: "engagement",
+        event_label: "WaitList Form",
+        value: 1,
+      })};
+
       setMessage("Thank you for signing up!");
       setEmail(""); // Clear the email input after submission
     } catch (error) {
