@@ -52,6 +52,9 @@ export const useWaitlist = () => {
 
       setMessage("Thank you for signing up!");
       setEmail(""); // Clear the email input after submission
+
+      // Navigate to /success
+      window.location.href = "/success";
     } catch (error) {
       console.error("Error saving email: ", error);
       setMessage("An unexpected error occurred. Please try again later.");
