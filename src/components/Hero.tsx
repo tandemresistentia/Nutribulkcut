@@ -125,7 +125,7 @@ const Hero = () => {
             >
               <div className="absolute inset-0 transition-opacity bg-gradient-to-r from-orange-500 to-orange-600 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30"></div>
               <Image
-                src="https://imgur.com/TOH6tp8.png"
+                src="https://imgur.com/z5KXW6W.png"
                 alt="Fitness Results"
                 width={450}
                 height={550}
